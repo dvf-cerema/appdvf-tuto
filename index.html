@@ -11,8 +11,8 @@
 class: left, middle
 background-image: url(img/background.png)
 
-# ![Logo Cerema](img/logo_cerema.png) Tutoriel AppDVF v0.1 beta
-### janvier 2017
+# ![Logo Cerema](img/logo_cerema.png) Tutoriel AppDVF v2.4
+### août 2020
 #### par Antoine Herman
 
 ---
@@ -21,43 +21,13 @@ background-image: url(img/background.png)
 
 ### Sous Windows
 
-> 1. Téléchargez l'archive __AppDVF-vbeta.zip__
+> 1. Téléchargez l'archive __appdvf-v2_4.zip__ sur [l'espace de téléchargement](https://cerema.box.com/v/appdvf-download)
 > 2. Décompressez l'archive dans un répertoire _AppDVF_ (par exemple)
-> 3. Ouvrez le répertoire _AppDVF_ et initialisez le serveur local en cliquant sur le fichier __Appdvf_vbeta.bat__. 
+> 3. Ouvrez le répertoire _AppDVF_ et initialisez le serveur local en cliquant sur le fichier __Appdvf.bat__. 
 _(Nota : La fenêtre de commande qui s'affiche doit rester active durant l'utilisation de AppDVF.)_
 > 4. Accédez à la page d'accueil de AppDVF à l'aide de votre navigateur web via l'adresse: _localhost:8000_
 
 _**Nota** : En fonction de la version de Windows, il peut être nécessaire d'installer au préalable Visual C++ Redistributable (https://www.microsoft.com/en-us/download/details.aspx?id=48145)_
-
----
-
-## Installation et Démarrage
-
-### Sous Linux
-
-(à venir - dépôt github non accessible)
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install python35-pip
-$ sudo apt-get install libpq-dev python-dev
-$ cd /home/user
-$ mkdir appdvf
-$ cd appdvf
-$ git clone https://github.com/....
-$ sudo pip install -r requirements.txt
-$ mv db_init.sqlite3 db.sqlite3
-$ python3 manage.py migrate
-$ python3 manage.py runserver
-```
-
----
-
-## Installation et Démarrage
-
-### via docker
-
-(à venir)
 
 ---
 
@@ -104,10 +74,10 @@ Par défaut, les identifiants de connexion sont les suivants :
 
 ### Définition de la base de données DVF+/DV3F 
 
-Avant l'utilisation des différentes applications de AppDVF, il est nécessaire de définir les configurations des différentes bases de données
-DVF+ ou DV3F accessibles pour l'utilisateur. 
+Avant l'utilisation des différentes applications de AppDVF, il est nécessaire d'avoir préalablement **installer une base de données DV3F ou DVF+ - open-data 
+sous PostgreSQL/PostGIS et d'avoir les identifiants de connexion à cette base de données.**
 
-Les configurations définies seront sauvegardées et pourront être activées à tout moment.
+Les configurations d'accès aux bases de données seront sauvegardées par AppDVF et pourront être activées à tout moment.
 
 .image-100[![Accueil BDD](img/accueil_bdd.png)]
 
@@ -119,31 +89,6 @@ Les configurations définies seront sauvegardées et pourront être activées à
 
 .image-100[![Paramètres BDD](img/parametres_bdd.png)]
 
----
-
-## EasyDVF
-
-Sélectionnez un EPCI ou une commune pour afficher les mutations correspondantes présentes dans la base de données active. 
-
-.image-100[![EasyDVF](img/easydvf1.png)]
-
----
-
-## EasyDVF
-
-Un certain nombre de filtres est applicable dans l'affichage des mutations du territoire sélectionné.
-
-Il est également possible d'exporter celles-ci en format csv (encodage UTF-8).
-
-.image-100[![EasyDVF](img/easydvf2.png)]
-
----
-
-## EasyDVF
-
-Cliquez sur une mutation pour en afficher le détail. 
-
-.image-100[![EasyDVF](img/easydvf3.png)]
 
 ---
 
