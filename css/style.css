@@ -1,0 +1,53 @@
+@font-face {
+    font-family:"DaxOT";
+    src: url("../font/DaxRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Yanone";
+    src: url("../font/YanoneKaffeesatz-Regular.ttf") format("truetype");
+}
+
+body { 
+	font-family: 'DaxOT'; 
+	color: #87888A;
+}		
+h1, h2, h3, h4 {
+    font-family: 'Yanone';
+    font-weight: normal;
+}
+h1, h2 {
+	color: #EE7F00;
+}
+a {
+	text-decoration: none;
+	color : #87888A;
+}
+.remark-code, .remark-inline-code { font-family: 'DaxOT'; }
+
+.image-100 img {
+	width: 100%;
+}
+
+.remark-slide-content{background-size: contain;}
+
+table {
+	border: solid 1px #EE7F00;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-family: 'Yanone';
+    font-weight: normal;
+}
+thead th {
+	background-color: #EE7F00;
+	border: solid 1px #EE7F00;
+	color: white;
+	padding: 5px;
+	text-align: left;		
+}
+tbody td {
+	border: solid 1px #EE7F00;
+	color: #87888A;
+	padding: 5px;		
+}
+	   
